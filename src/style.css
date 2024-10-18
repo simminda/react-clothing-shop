@@ -1,0 +1,125 @@
+/* body {
+    background-color: darkgray;
+    color: white;
+} */
+
+.img-thumbnail {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.prodLinks {
+    text-decoration: none;
+    color: black;
+}
+
+#about p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.mainBody {
+    position: relative;
+    min-height: 960px;
+
+    /* Center Contents*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.backgroundImage {
+    position: absolute;
+    object-fit: fill;
+    z-index: -1;
+}
+
+.content {
+    /* Styles for your content within the div */
+  }
+
+.slide-description {
+    color: white;
+    font-size: 500%;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+}
+
+#enter {
+    height: 450px
+    
+}
+
+#enterLink {
+    margin-left: -65%;
+    filter: grayscale(100%);
+}
+
+/* Wish list heart icons */
+.product-container {
+    position: relative;
+  }
+  
+.heart-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.product-container .heart-icon:hover {
+    color: red;
+}
+  
+
+.side-filter {
+    flex: 0 0 25%; /* Adjust the width as per your requirement */
+    padding-right: 20px; /* Optional: Add spacing between the filter and products */
+}
+  
+#products {
+    display: flex;
+}
+  
+.container {
+    flex: 1;
+}
+
+
+/* Accordion */
+.accordion {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 40px;
+    min-width: 240px;
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+.link i {
+    margin-left: auto;
+}
+  
+  .submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  
+  .submenu li {
+    padding-left: 20px;
+  }
+  
+  .accordion .active .submenu {
+    display: block;
+  }
+
+  
