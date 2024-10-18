@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import '../style.css';
+import React, { useState } from "react";
+import "../style.css";
 
 const SideFilter = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -9,14 +9,17 @@ const SideFilter = () => {
   };
 
   return (
-    <div style={{paddingRight:'25px'}}>
+    <div style={{ paddingRight: "25px" }}>
       <h3>Filters</h3>
       <hr></hr>
 
       <ul id="accordion" className="accordion">
-        <li className={activeIndex === 0 ? 'active' : ''}>
+        <li className={activeIndex === 0 ? "active" : ""}>
           <div className="link" onClick={() => handleAccordionClick(0)}>
-            Tops<i className={`bi bi-chevron-${activeIndex === 0 ? 'up' : 'down'}`}></i>
+            Tops
+            <i
+              className={`bi bi-chevron-${activeIndex === 0 ? "up" : "down"}`}
+            ></i>
           </div>
           <ul className="submenu">
             <li>
@@ -31,9 +34,12 @@ const SideFilter = () => {
           </ul>
         </li>
         <hr></hr>
-        <li className={activeIndex === 1 ? 'active' : ''}>
+        <li className={activeIndex === 1 ? "active" : ""}>
           <div className="link" onClick={() => handleAccordionClick(1)}>
-            Bottoms<i className={`bi bi-chevron-${activeIndex === 1 ? 'up' : 'down'}`}></i>
+            Bottoms
+            <i
+              className={`bi bi-chevron-${activeIndex === 1 ? "up" : "down"}`}
+            ></i>
           </div>
           <ul className="submenu">
             <li>
@@ -48,9 +54,12 @@ const SideFilter = () => {
           </ul>
         </li>
         <hr></hr>
-        <li className={activeIndex === 2 ? 'active' : ''}>
+        <li className={activeIndex === 2 ? "active" : ""}>
           <div className="link" onClick={() => handleAccordionClick(2)}>
-            Soles<i className={`bi bi-chevron-${activeIndex === 2 ? 'up' : 'down'}`}></i>
+            Soles
+            <i
+              className={`bi bi-chevron-${activeIndex === 2 ? "up" : "down"}`}
+            ></i>
           </div>
           <ul className="submenu">
             <li>
@@ -65,9 +74,12 @@ const SideFilter = () => {
           </ul>
         </li>
         <hr></hr>
-        <li className={activeIndex === 3 ? 'active' : ''}>
+        <li className={activeIndex === 3 ? "active" : ""}>
           <div className="link" onClick={() => handleAccordionClick(3)}>
-            Accessories <i className={`bi bi-chevron-${activeIndex === 3 ? 'up' : 'down'}`}></i>
+            Accessories{" "}
+            <i
+              className={`bi bi-chevron-${activeIndex === 3 ? "up" : "down"}`}
+            ></i>
           </div>
           <ul className="submenu">
             <li>

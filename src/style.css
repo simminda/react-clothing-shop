@@ -76,8 +76,8 @@
   
 
 .side-filter {
-    flex: 0 0 25%; /* Adjust the width as per your requirement */
-    padding-right: 20px; /* Optional: Add spacing between the filter and products */
+    flex: 0 0 25%; 
+    padding-right: 20px; 
 }
   
 #products {
@@ -95,31 +95,40 @@
     padding: 0;
     margin-right: 40px;
     min-width: 240px;
-  }
+}
   
-  .link {
+.link {
     display: flex;
     align-items: center;
     cursor: pointer;
-  }
+}
 
 .link i {
     margin-left: auto;
 }
   
-  .submenu {
+.submenu {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: none;
-  }
+}
   
-  .submenu li {
+.submenu li {
+    margin-top: 5px;
     padding-left: 20px;
-  }
+    text-decoration: none;
+    color: black;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+    padding: 2px;
+}
   
-  .accordion .active .submenu {
+.accordion .active .submenu {
     display: block;
-  }
+}
 
   
